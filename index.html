@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Todo List</title>
+</head>
+<body>
+
+<div id="myDIV" class="header">
+  <h2 style="margin:5px">My To Do List</h2>
+  <input type="text" id="myInput" placeholder="เพิ่มรายชื่อ...">
+  <span onclick="newElement()" class="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+  <li>
+    Ananped Student
+    <span class="close" onclick="removeElement(this)">×</span>
+    <span class="editBtn" onclick="editElement(this)">✎</span>
+    <span class="saveBtn" onclick="saveElement(this)" style="display:none;">Save</span>
+  </li>
+  <li>
+    David Beckham
+    <span class="close" onclick="removeElement(this)">×</span>
+    <span class="editBtn" onclick="editElement(this)">✎</span>
+    <span class="saveBtn" onclick="saveElement(this)" style="display:none;">Save</span>
+  </li>
+  <li>
+    Lisa Blackpink
+    <span class="close" onclick="removeElement(this)">×</span>
+    <span class="editBtn" onclick="editElement(this)">✎</span>
+    <span class="saveBtn" onclick="saveElement(this)" style="display:none;">Save</span>
+  </li>
+  <li>
+    Justin Bieber
+    <span class="close" onclick="removeElement(this)">×</span>
+    <span class="editBtn" onclick="editElement(this)">✎</span>
+    <span class="saveBtn" onclick="saveElement(this)" style="display:none;">Save</span>
+  </li>
+  <li>
+    Organize Natachra
+    <span class="close" onclick="removeElement(this)">×</span>
+    <span class="editBtn" onclick="editElement(this)">✎</span>
+    <span class="saveBtn" onclick="saveElement(this)" style="display:none;">Save</span>
+  </li>
+</ul>
+
+<script src="index.js"></script>
+</body>
+</html>
